@@ -1,0 +1,144 @@
+/* remove margin and padding from all  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    font-family: 'Poppins' sans-serif;
+}
+/* css variables */
+:root{
+    --main_color:hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    height: 100vh;
+}
+/* main classes */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 70px;
+    position: relative;
+    background: url(../imgas/bg-desktop.svg) var(--main_color) no-repeat;
+    
+}
+.container header img{
+    width: auto;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+}
+ .home .imgBox{
+    margin-right: 40px;
+}
+.home .text_box {
+    position: relative;
+}
+.home .text_box h1{
+   font-size: 3.9rem;
+   color: white;
+   text-align:left;
+} 
+.home .text_box p{
+   margin: 30px 0 ;
+   color: white;
+   font-size: 1.1rem;
+   max-width: 500px;
+   line-height: 25px;
+   font-weight: 400;
+} 
+.btn-box{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    display: inline;
+    background: white;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.social_icons{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right:6%;
+    bottom: 6%;
+}
+.social_icons a{
+   color: white;
+   border-radius: 50%;
+   border: 1px solid #fff;
+   padding: 10px;
+   text-decoration: none;
+   font-size: 1.5rem;
+   margin: 0 10px;
+}
+
+/* responsive part */
+
+/* md screen */
+@media(max-width:998px){
+    .home .text_box h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:768px){
+    .home .text_box h1 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+        text-align: center;
+    }
+    /* .btn{
+        margin-left: 40%;
+    } */
+    .soci-container{
+        display: flex;
+        justify-content: center;
+    }
+    .home{
+        flex-wrap: wrap;
+        padding: 0 50px;
+        margin-bottom: 95px;
+    }
+    .container {
+    padding: 36px 30px;
+}
+.home .text_box p {
+    max-width: 100%;
+    text-align: center;
+}
+.social_icons{
+    right: 0%;
+    position: relative;
+}
+}
+
+@media(max-width:550px){
+    .home{
+        padding: 0;
+        margin-bottom: 55px;
+    }
+   
+    .container {
+        background-image: url(../imgas/bg-mobile.svg);
+    }
+    
+}
